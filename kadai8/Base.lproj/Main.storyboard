@@ -25,7 +25,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-cp-Ldn">
                                 <rect key="frame" x="18" y="129" width="378" height="31"/>
                                 <connections>
-                                    <action selector="sliderAction:" destination="QpD-rQ-Eyy" eventType="valueChanged" id="ttf-oY-NRs"/>
+                                    <action selector="sliderAction:" destination="QpD-rQ-Eyy" eventType="valueChanged" id="Ycf-Ef-giJ"/>
                                 </connections>
                             </slider>
                         </subviews>
