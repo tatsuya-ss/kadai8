@@ -8,7 +8,7 @@
 import UIKit
 
 class FirstTabBarController: UIViewController {
-
+    
     @IBOutlet private var sliderValueLabel: UILabel!
     @IBOutlet private var slider: UISlider!
     
