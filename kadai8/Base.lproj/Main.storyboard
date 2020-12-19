@@ -15,8 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="OrB-Ao-eJU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCw-Mc-r4V">
+                                <rect key="frame" x="186" y="68" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-cp-Ldn">
+                                <rect key="frame" x="18" y="129" width="378" height="31"/>
+                            </slider>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OaS-Fi-ogJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="OaS-Fi-ogJ" firstAttribute="trailing" secondItem="Avz-cp-Ldn" secondAttribute="trailing" constant="20" id="G7f-MN-cQo"/>
+                            <constraint firstItem="Avz-cp-Ldn" firstAttribute="top" secondItem="RCw-Mc-r4V" secondAttribute="bottom" constant="40" id="J89-rg-ULN"/>
+                            <constraint firstItem="Avz-cp-Ldn" firstAttribute="centerX" secondItem="OaS-Fi-ogJ" secondAttribute="centerX" id="aKE-Z7-DlG"/>
+                            <constraint firstItem="Avz-cp-Ldn" firstAttribute="leading" secondItem="OaS-Fi-ogJ" secondAttribute="leading" constant="20" id="i47-kA-jBn"/>
+                            <constraint firstItem="RCw-Mc-r4V" firstAttribute="top" secondItem="OaS-Fi-ogJ" secondAttribute="top" constant="24" id="myk-Np-ydB"/>
+                            <constraint firstItem="RCw-Mc-r4V" firstAttribute="centerX" secondItem="OaS-Fi-ogJ" secondAttribute="centerX" id="zZ6-I3-R86"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="gf6-t3-421"/>
                 </viewController>
@@ -31,8 +50,27 @@
                     <view key="view" contentMode="scaleToFill" id="5re-Hu-GRj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-DJ-DI3">
+                                <rect key="frame" x="186" y="68" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-2H-DLn">
+                                <rect key="frame" x="18" y="129" width="378" height="31"/>
+                            </slider>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lab-K1-skY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="lab-K1-skY" firstAttribute="trailing" secondItem="fQN-2H-DLn" secondAttribute="trailing" constant="20" id="4lb-7J-ULK"/>
+                            <constraint firstItem="fQN-2H-DLn" firstAttribute="leading" secondItem="lab-K1-skY" secondAttribute="leading" constant="20" id="Asd-y9-0OW"/>
+                            <constraint firstItem="fQN-2H-DLn" firstAttribute="top" secondItem="6Wf-DJ-DI3" secondAttribute="bottom" constant="40" id="JE5-yy-dQA"/>
+                            <constraint firstItem="6Wf-DJ-DI3" firstAttribute="top" secondItem="lab-K1-skY" secondAttribute="top" constant="24" id="Jpa-1d-x0J"/>
+                            <constraint firstItem="fQN-2H-DLn" firstAttribute="centerX" secondItem="lab-K1-skY" secondAttribute="centerX" id="dD6-Ss-5Bd"/>
+                            <constraint firstItem="6Wf-DJ-DI3" firstAttribute="centerX" secondItem="lab-K1-skY" secondAttribute="centerX" id="wWI-6s-lgh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pEh-UR-zXl"/>
                 </viewController>
@@ -60,8 +98,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
