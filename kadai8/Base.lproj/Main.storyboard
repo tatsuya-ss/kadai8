@@ -24,6 +24,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Avz-cp-Ldn">
                                 <rect key="frame" x="18" y="129" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="QpD-rQ-Eyy" eventType="valueChanged" id="ttf-oY-NRs"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OaS-Fi-ogJ"/>
@@ -38,6 +41,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="gf6-t3-421"/>
+                    <connections>
+                        <outlet property="slider" destination="Avz-cp-Ldn" id="wpy-Vo-0gQ"/>
+                        <outlet property="sliderValueLabel" destination="RCw-Mc-r4V" id="zUB-JE-wXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPh-UE-DgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,6 +66,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-2H-DLn">
                                 <rect key="frame" x="18" y="129" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="eMx-ug-t6P" eventType="valueChanged" id="Ec7-b8-Q2n"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lab-K1-skY"/>
@@ -73,6 +83,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="pEh-UR-zXl"/>
+                    <connections>
+                        <outlet property="slider" destination="fQN-2H-DLn" id="noW-3w-aGJ"/>
+                        <outlet property="sliderValueLabel" destination="6Wf-DJ-DI3" id="FK2-7y-tUG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ka-k4-PWE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

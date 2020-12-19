@@ -9,21 +9,20 @@ import UIKit
 
 class FirstTabBarController: UIViewController {
 
+    @IBOutlet private var sliderValueLabel: UILabel!
+    @IBOutlet private var slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        sliderValueLabel.text = "0"
+        slider.value = 0.0
+
     }
     
+    @IBAction private func sliderAction(_ sender: Any) {
+        let sliderValue = slider.value
+        sliderValueLabel.text = String(sliderValue)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
